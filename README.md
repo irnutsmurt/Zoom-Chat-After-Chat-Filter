@@ -16,7 +16,7 @@ By default, Windows 10 and 11 Home editions have PowerShell scripts execution di
     Set-ExecutionPolicy RemoteSigned
     ```
 
-    Please note that this command allows scripts downloaded from the internet to be run if they are not signed by a trusted publisher.
+    Please note that this command allows unsigned scripts from trusted publishers downloaded from the internet to be run.
 
 2. After running the script, for best security practices, revert the changes by running:
     ```powershell
