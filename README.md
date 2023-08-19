@@ -40,7 +40,7 @@ By default, Windows 10 and 11 Home editions have PowerShell scripts execution di
     .\Filter_Out_Private_Messages.ps1
     ```
 
-4. **Check the Results**: Once the script has finished running, you'll find a file named `meeting_filtered_chat.txt` in the same directory. This file contains your chat log without private messages.
+4. **Check the Results**: Once the script has finished running, you'll find a file named `meeting_saved_chat_MM_DD_YYYY.txt` (where MM_DD_YYYY represents the current date) in the same directory. This file contains your chat log without private messages.
 
 ## Contributions
 
