@@ -7,6 +7,24 @@ PowerShell script to filter out private messages from virtual meeting chat logs.
 - Windows PowerShell (tested with v5.1, but should work with other versions too)
 - Input file named `meeting_saved_chat.txt` in the same directory as the script
 
+## Execution Policy Note for Windows 10/11 Home Users
+
+By default, Windows 10 and 11 Home editions have PowerShell scripts execution disabled. To temporarily enable script execution, follow these steps:
+
+1. Open a PowerShell window with administrative privileges and run:
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    ```
+
+    Please note that this command allows scripts downloaded from the internet to be run if they are not signed by a trusted publisher.
+
+2. After running the script, for best security practices, revert the changes by running:
+    ```powershell
+    Set-ExecutionPolicy Restricted
+    ```
+
+    This will disable the execution of unsigned scripts again, ensuring your system remains secure.
+   
 ## How to Run
 
 1. **Clone the Repository**:
@@ -19,7 +37,7 @@ PowerShell script to filter out private messages from virtual meeting chat logs.
 
 3. **Execute the Script**: Right-click the script and choose 'Run with PowerShell'. Alternatively, you can open a PowerShell terminal in the directory and run:
     ```powershell
-    .\YourScriptName.ps1
+    .\Filter_Out_Private_Messages.ps1
     ```
 
 4. **Check the Results**: Once the script has finished running, you'll find a file named `meeting_filtered_chat.txt` in the same directory. This file contains your chat log without private messages.
